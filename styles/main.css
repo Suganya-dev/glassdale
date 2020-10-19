@@ -1,0 +1,23 @@
+.criminalsContainer{
+    font-weight: 200;
+    margin-right: 20%;
+ }
+.criminals{
+    border: 1px solid blue; 
+    border-width: 25%;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin-right: 5px;
+    margin-top: 8px;
+    flex-basis: 18%;
+    font-size: medium;
+}
+
+    
+    
+   
+   
+    
+    

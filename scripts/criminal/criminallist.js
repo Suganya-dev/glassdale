@@ -1,20 +1,23 @@
-import { getCriminals, useCriminals } from './criminals/CriminalProvider.js'
+import { getCriminals, useCriminals } from './criminaldataprovider.js'
 import {criminalcard} from "./criminal.js"
-export const CriminalList = () => {
-    getCriminals().then(( ) =>{
-        const criminal1 = useCriminals()
-        })
-}
-    
-const contentElement = document.querySelector(".container")
 
-let criminalHTML = ""
-for (const numbers of criminal1 ){
+const contentElement = document.querySelector(".criminalsContainer")
+export const CriminalList = () => {
+    getCriminals().then( () => { 
+        const criminals = useCriminals();
+    let criminalHTML = ""
+for(const numbers of criminals){
     criminalHTML += criminalcard(numbers)
-}
-contentElement.innerHTML =  
-`<h3>  glassdale criminals   </h3>
+
+    contentElement.innerHTML =  
+`<h3>  Glassdale Criminals   </h3>
 <section  class="criminals" > 
 ${criminalHTML}
 </section>`
+
+}
+    
+})
+}
+
 
