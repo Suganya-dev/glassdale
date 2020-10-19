@@ -9,10 +9,28 @@
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
-    margin-right: 5px;
-    margin-top: 8px;
-    flex-basis: 18%;
+   margin: 10px 30px;
+    flex-basis: 20%;
     font-size: medium;
+}
+
+.filters__officer{
+    border: 1px solid grey;
+    border-width: 20%;
+    font-size: medium;
+   margin : 40px 60px;
+    padding: 60px;
+    background-color: khaki;
+
+
+}
+
+.filters{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    order: 2;
+    flex-basis: 10%;
+   
 }
 
     
