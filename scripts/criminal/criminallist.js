@@ -5,12 +5,16 @@ export const CriminalList = () => {
         const criminal1 = useCriminals()
         })
 }
-    const contentElement = document.querySelector(".container")
-
+    
+const contentElement = document.querySelector(".container")
 
 let criminalHTML = ""
 for (const numbers of criminal1 ){
     criminalHTML += criminalcard(numbers)
 }
-contentElement.innerHTML +=  criminalHTML()
+contentElement.innerHTML =  
+`<h3>  glassdale criminals   </h3>
+<section  class="criminals" > 
+${criminalHTML}
+</section>`
 
