@@ -4,8 +4,8 @@ export const getConvictions = () => {
 return fetch("https://criminals.glassdale.us/crimes")
 .then(response => response.json())
 .then(
-    parsedconvictions => {
-        console.table(parsedconvictions)
-        convictions =  parsedconvictions
+    convictionsArray => {
+        // console.table(convictionsArray)
+        convictions =  convictionsArray
     }
 ) }
