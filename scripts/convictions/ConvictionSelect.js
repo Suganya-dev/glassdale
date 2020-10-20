@@ -16,7 +16,7 @@ contentTarget.innerHTML = `
                 convictionObj => {
 
         return `<option value ="${convictionObj.id}"> ${convictionObj.name} </option>`})
-         .join("")
+        //  .join("")
                 }    
         </select> `
                 }
