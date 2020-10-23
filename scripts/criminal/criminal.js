@@ -1,7 +1,6 @@
 export const criminalcard =(criminalObj) => {
     return `
     <section class="criminals" >
-   
     <h2>${criminalObj.name}</h2>
     <p class= "criminals__id"> id : ${criminalObj.id} </p>
     <p class= "criminals__age"> Age: ${criminalObj.age}</p>
