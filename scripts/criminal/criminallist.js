@@ -8,34 +8,66 @@ const eventHub = document.querySelector(".container")
 export const CriminalList = () => {
     getCriminals().then( () => { 
         const criminals = useCriminals();
-    
+         render(criminals);
     
 })
 }
 
 eventHub.addEventListener("crimeSelected", event => {
         console.log("crimeSelected",event.detail.crimeThatWasChosen)
+
         if(event.detail.crimeThatWasChosen !== 0) { 
         const criminals = useCriminals()
         console.log(criminals)
+
         const convictions = useConvictions()
          console.log("convictions",convictions)
+
         const convictionThatWasChosen = convictions.find(convictionObj => {
-        return convictionObj.id === event.detail.crimeThatWasChosen
+            // debugger
+        return convictionObj.id === parseInt(event.detail.crimeThatWasChosen)
         })
         console.log("convictionThatWasChosen",convictionThatWasChosen)
    
         const filteredArray = criminals.filter(criminalObj =>{
-            return criminalObj.name === convictionThatWasChosen.name 
+            return criminalObj.conviction === convictionThatWasChosen.name
         })
       console.log("filtered",filteredArray)
       render (filteredArray)
+      console.log("filtered list of criminals")
     }
 })
-  
-      const render = () => { 
+  eventHub.addEventListener("officerSelect", officerselectedEventObj =>{
+    console.log(officerselectedEventObj, "customevent heard on the eventhub") 
+
+     const selectedOfficerName = officerselectedEventObj.detail.officerName
+     const criminals = useCriminals()
+     console.log(criminals)
+
+
+
+
+
+     
+
+     const filteredArrayCriminals = criminals.filter( 
+     (criminalObj =>{
+         if (criminalObj.arrestingOfficer === selectedOfficerName) { 
+             return true
+            } 
+            return false
+         }
+     )) 
+     console.log(filteredArrayOfficers ,"criminals list filtered")
+
+     render(filteredArrayCriminals)
+  })
+
+
+      const render = (criminals) => { 
       let criminalHTML = ""
-    for(const numbers of filteredArray){
+    //   criminals.forEach()
+    for(const numbers of criminals){
     criminalHTML += criminalcard(numbers)
 
     contentElement.innerHTML =  
