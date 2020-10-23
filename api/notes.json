@@ -2,7 +2,7 @@
     "notes": [
         {
             "id" : 1,
-            "dadateOfInterviewte": "10/22/20",
+            "dateOfInterview": "10/22/20",
             "author": "sherlock Homes",
             "suspect": "Professor Moriarty",
             "note" : "He is very good writer as well and good instructor",
@@ -10,7 +10,7 @@
         },
         {
             "id" : 2,
-            "dadateOfInterviewte": "10/22/20",
+            "dateOfInterview": "10/22/20",
             "author": "sherlock Homes",
             "suspect": "Professor Moriarty",
             "note" : "He is very good writer as well and good instructor",
@@ -18,7 +18,7 @@
         },
         {
             "id" : 3,
-            "dadateOfInterviewte": "10/22/20",
+            "dateOfInterview": "10/22/20",
             "author": "sherlock Homes",
             "suspect": "Professor Moriarty",
             "note" : "He is very good writer as well and good instructor",

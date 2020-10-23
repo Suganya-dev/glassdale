@@ -1,6 +1,6 @@
 
 import{useOfficers,getOfficers} from "./OfficerProvider.js"
-const OfficerHTMLcontainer = document.querySelector(".filter__officer")
+const OfficerHTMLcontainer = document.querySelector(".filters__officer")
 const eventHub = document.querySelector(".container")
 
 export const officerselect = () =>{

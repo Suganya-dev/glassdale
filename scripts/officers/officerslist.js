@@ -1,6 +1,6 @@
 import {useOfficers,getOfficers} from "./OfficerProvider.js"
 import {officer} from "./officers.js"
-const ContentElement = document.querySelector(".filters__officer")
+const ContentElement = document.querySelector(".officersContainer")
 export const Officerlist = () => { 
 getOfficers() .then( () => {
 const officers = useOfficers();

@@ -40,17 +40,11 @@ eventHub.addEventListener("crimeSelected", event => {
   eventHub.addEventListener("officerSelect", officerselectedEventObj =>{
     console.log(officerselectedEventObj, "customevent heard on the eventhub") 
 
-     const selectedOfficerName = officerselectedEventObj.detail.officerName
+     const selectedOfficerName = officerselectedEventObj.detail.OfficerThatWasChosen
      const criminals = useCriminals()
      console.log(criminals)
 
-
-
-
-
-     
-
-     const filteredArrayCriminals = criminals.filter( 
+const filteredArrayCriminals = criminals.filter( 
      (criminalObj =>{
          if (criminalObj.arrestingOfficer === selectedOfficerName) { 
              return true
@@ -58,7 +52,7 @@ eventHub.addEventListener("crimeSelected", event => {
             return false
          }
      )) 
-     console.log(filteredArrayOfficers ,"criminals list filtered")
+    //  console.log(filteredArrayOfficers ,"criminals list filtered")
 
      render(filteredArrayCriminals)
   })
