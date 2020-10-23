@@ -31,7 +31,7 @@ const newNote = {
     author,
     suspect,
     note,
-    Timestamp
+    timestamp
 }
 //send the object to database
   saveNote(newNote)

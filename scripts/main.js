@@ -8,14 +8,14 @@ import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 import {Officerlist} from "./officers/officerslist.js"
 import {officerselect} from "./officers/officerselect.js"
 import {NoteForm} from "./notes/Noteform.js"
-
+import {Notelist} from "./notes/Notelist.js"
 CriminalList();
-criminalcard();
+// criminalcard();
 ConvictionSelect();
 Officerlist();
 officerselect();
 NoteForm();
-
+Notelist();
 
 
 
