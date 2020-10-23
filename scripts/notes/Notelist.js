@@ -5,6 +5,7 @@ import {notecard} from "./Note.js"
 //  iterate the notes  -> make html representation
 // render to the dom
 const notescontainer = document.querySelector(".notesContainer")
+const eventHub = document.querySelector(".container")
 export const Notelist = () => {
     getNotes()
     .then( () =>{
@@ -12,6 +13,8 @@ export const Notelist = () => {
    render (allnotes)
     })
 }
+eventHub.addEventListener("noteStateChangedEvent",() => Notelist())
+
 
 const render = (NotesArray) =>{
 
