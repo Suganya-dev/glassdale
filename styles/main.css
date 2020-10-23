@@ -14,7 +14,7 @@
     font-size: large;
 }
 
-.filters__officer{
+.officersContainer{
     border: 1px solid grey;
     width: 50%;
     height: 60%;
@@ -23,6 +23,15 @@
     padding: 60px;
     background-color: khaki;
 
+
+}
+.notesContainer{
+    border: 1px solid grey;
+    margin : auto;
+    padding: 60px;
+    background-color:rosybrown;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 .filters__crime{
