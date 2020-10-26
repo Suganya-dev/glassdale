@@ -55,6 +55,30 @@
       "note": "He is very rude and car racer at night.",
       "timestamp": 1603478223992,
       "id": 7
+    },
+    {
+      "dateOfInterview": "2020-10-15",
+      "author": "Suganya",
+      "suspect": "peter",
+      "note": "He is a fraud.",
+      "timestamp": 1603734785567,
+      "id": 8
+    },
+    {
+      "dateOfInterview": "2020-10-15",
+      "author": "Suganya",
+      "suspect": "peter",
+      "note": "He is a fraud as well innocence.",
+      "timestamp": 1603734797830,
+      "id": 9
+    },
+    {
+      "dateOfInterview": "2020-10-15",
+      "author": "Sara lee",
+      "suspect": "peterpaul",
+      "note": "He is a innocence as well as thief.",
+      "timestamp": 1603734867526,
+      "id": 10
     }
   ]
 }
