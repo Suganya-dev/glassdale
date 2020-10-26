@@ -9,6 +9,8 @@ import {Officerlist} from "./officers/officerslist.js"
 import {officerselect} from "./officers/officerselect.js"
 import {NoteForm} from "./notes/Noteform.js"
 import {Notelist} from "./notes/Notelist.js"
+import {createAlibiEventListener} from "./criminal/AlibiList.js"
+import {useWitness} from "./criminal/witnessDataProvider.js"
 CriminalList();
 // criminalcard();
 ConvictionSelect();
@@ -16,6 +18,8 @@ Officerlist();
 officerselect();
 NoteForm();
 Notelist();
+createAlibiEventListener();
+useWitness();
 
 
 
