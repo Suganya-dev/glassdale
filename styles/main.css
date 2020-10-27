@@ -14,7 +14,7 @@
     font-size: large;
 }
 
-.officersContainer{
+.officersContainer,.caseDataContainer{
     border: 1px solid grey;
     width: 50%;
     height: 60%;
