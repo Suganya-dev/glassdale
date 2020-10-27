@@ -10,7 +10,6 @@ export const criminalcard =(criminalObj) => {
     <p class= "criminals__start">Term start: ${new Date(criminalObj.incarceration.start).toLocaleDateString('en-US')}</p>
     <p class= "criminals__end">Term end: ${new Date(criminalObj.incarceration.end).toLocaleDateString('en-US')}</p>
     <button id="associates--${criminalObj.id}">Associate Alibis</button>
-    <button id= "Witness--${criminalObj.witness}">Witness Statements</button>
     </section>
     `
 }
@@ -28,3 +27,4 @@ if( clickEvent.target.id.startsWith("associates--")){
 
 }
 })
+
