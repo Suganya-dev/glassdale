@@ -35,6 +35,8 @@ eventHub.addEventListener("crimeSelected", event => {
       console.log("filtered",filteredArray)
       render (filteredArray)
       console.log("filtered list of criminals")
+    }else{
+        CriminalList()
     }
 })
   eventHub.addEventListener("officerSelect", officerselectedEventObj =>{

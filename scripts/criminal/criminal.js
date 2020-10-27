@@ -2,7 +2,7 @@ const eventHub = document.querySelector(".container")
 
 export const criminalcard =(criminalObj) => {
     return `
-    <section class="criminals" id="criminal-${criminalObj.id}" id="criminal-${criminalObj.id}">
+    <section class="criminals" id="criminal-${criminalObj.id}" >
     <h2>${criminalObj.name}</h2>
     <p class= "criminals__id"> id : ${criminalObj.id} </p>
     <p class= "criminals__age"> Age: ${criminalObj.age}</p>
@@ -10,7 +10,6 @@ export const criminalcard =(criminalObj) => {
     <p class= "criminals__start">Term start: ${new Date(criminalObj.incarceration.start).toLocaleDateString('en-US')}</p>
     <p class= "criminals__end">Term end: ${new Date(criminalObj.incarceration.end).toLocaleDateString('en-US')}</p>
     <button id="associates--${criminalObj.id}">Associate Alibis</button>
-    <button id= "Witness--${criminalObj.id}">Witness Statements</button>
     </section>
     `
 }
@@ -29,16 +28,3 @@ if( clickEvent.target.id.startsWith("associates--")){
 }
 })
 
-eventHub.addEventListener("click",clickEvent =>{
-const[prefix, witnessId]= clickEvent.target.id.split("--")
-// console.log(prefix,witnessId)
-
-if(clickEvent.target.id.startsWith("Witness--")){
-const myCustomEvent = new CustomEvent("witnessbuttonClicked",{
-    detail: {
-        taco:  witnessId
-    }
-})
-eventHub.dispatchEvent(myCustomEvent)
-}
-})
