@@ -28,3 +28,17 @@ if( clickEvent.target.id.startsWith("associates--")){
 
 }
 })
+
+eventHub.addEventListener("click",clickEvent =>{
+const[prefix, witnessId]= clickEvent.target.id.split("--")
+// console.log(prefix,witnessId)
+
+if(clickEvent.target.id.startsWith("Witness--")){
+const myCustomEvent = new CustomEvent("witnessbuttonClicked",{
+    detail: {
+        taco:  witnessId
+    }
+})
+eventHub.dispatchEvent(myCustomEvent)
+}
+})
