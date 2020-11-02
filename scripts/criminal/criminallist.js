@@ -14,25 +14,25 @@ export const CriminalList = () => {
 }
 
 eventHub.addEventListener("crimeSelected", event => {
-        console.log("crimeSelected",event.detail.crimeThatWasChosen)
+        // console.log("crimeSelected",event.detail.crimeThatWasChosen)
 
         if(event.detail.crimeThatWasChosen !== 0) { 
         const criminals = useCriminals()
-        console.log(criminals)
+        // console.log(criminals)
 
         const convictions = useConvictions()
-         console.log("convictions",convictions)
+        //  console.log("convictions",convictions)
 
         const convictionThatWasChosen = convictions.find(convictionObj => {
             // debugger
         return convictionObj.id === parseInt(event.detail.crimeThatWasChosen)
         })
-        console.log("convictionThatWasChosen",convictionThatWasChosen)
+        // console.log("convictionThatWasChosen",convictionThatWasChosen)
    
         const filteredArray = criminals.filter(criminalObj =>{
             return criminalObj.conviction === convictionThatWasChosen.name
         })
-      console.log("filtered",filteredArray)
+    //   console.log("filtered",filteredArray)
       render (filteredArray)
       console.log("filtered list of criminals")
     }else{

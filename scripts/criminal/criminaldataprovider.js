@@ -12,13 +12,4 @@ export const getCriminals = () => {
     }
 
 
-    // export const getCriminals =() => criminals.slice();
-    // export const useCriminals = () => {
-    // return fetch("")
-    // .then(response => response.json())
-    // .then(
-    //     parsedcriminals => {
-    //         criminals= parsedcriminals
-    //     }
-    // )
-    // }
+    

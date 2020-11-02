@@ -1,9 +1,7 @@
 import { saveNote } from "./Notedataprovider.js";
-
-
-
 const contentTarget = document.querySelector(".noteFormContainer")
 const eventHub =  document.querySelector(".container")
+
 const render = () => {
     contentTarget.innerHTML = `
         <input id= "notes--dateOfInterview" type = "date"/>
@@ -25,7 +23,6 @@ const note = document.querySelector("#notes--note" ).value
 const timestamp = Date.now()
 
 //make a note object
-
 const newNote = {
     dateOfInterview,
     author,
@@ -33,7 +30,6 @@ const newNote = {
     note,
     timestamp
 }
-
 console.log(newNote)
 //send the object to database
   saveNote(newNote)
