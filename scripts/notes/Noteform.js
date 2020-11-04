@@ -4,11 +4,9 @@ const eventHub =  document.querySelector(".container")
 
 const render = () => {
     contentTarget.innerHTML = `
-        <input id= "notes--dateOfInterview" type = "date"/>
-        <input id= "notes--author" type="text" placeholder="Your name here" />
-        <input id= "notes--suspect" type="text"  placeholder="Your SuspectName here" />
-        <textarea id ="notes--note"  placeholder="Your Note here"></textarea>
-
+    <select id="noteForm--criminal" class="criminalSelect">
+    <option value="${ criminal.id }">${ criminal.name }</option>
+     </select>
         <button id="saveNote">SaveNote</button>
     `
 };
@@ -39,3 +37,8 @@ console.log(newNote)
 export const NoteForm = () => {
     render()
 }
+
+{/* <input id= "notes--dateOfInterview" type = "date"/>
+        <input id= "notes--author" type="text" placeholder="Your name here" />
+        <input id= "notes--suspect" type="text"  placeholder="Your SuspectName here" />
+        <textarea id ="notes--note"  placeholder="Your Note here"></textarea> */}
