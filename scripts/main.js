@@ -20,7 +20,7 @@ ConvictionSelect();
 Officerlist();
 officerselect();
 NoteForm();
-// Notelist();
+Notelist();
 createAlibiEventListener();
 useWitnessstatements();
 witnessButton();

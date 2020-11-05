@@ -3,30 +3,24 @@ import {getCriminals,useCriminals}from "../criminal/criminaldataprovider.js"
 const contentTarget = document.querySelector(".noteFormContainer")
 const eventHub =  document.querySelector(".container")
 
-
-export const NoteForm = () => {
-    getCriminals()
-    .then(render)
-}
-
-const criminalSelect = () => {
+export const NoteForm =() =>{
+    getCriminals().then(() =>{
         const criminals = useCriminals()
-        return ` 
-        <select class="criminalSelect" id="note--criminalId">
-           <option value="0">Select a suspect</option>
-            ${criminals.map(criminalObject =>{
-                return `<option value="${ criminalObject.id }">${ criminalObject.name }</option>`
-            }).join("")
-        }
-        </select>
-       `
+        render(criminals) 
+    })
 }
 
-const render =() =>{
+const render =(criminals) =>{
     contentTarget.innerHTML = `
     <input id="note--date" type="date"/>
     <input id ="note--author" type="text" placeholder="Your name"/>
-    ${criminalSelect()}
+    <select class="criminalSelect" id="note--criminalId">
+    <option value="0">Select a suspect</option>
+     ${criminals.map(criminalObject =>{
+         return `<option value="${ criminalObject.id }">${ criminalObject.name }</option>`
+     }).join("")
+ }
+ </select>
     <input id="note--text" type="text" placeholder="Note text"/>
         <button id="saveNote">Save Note</button>`
 }
@@ -36,7 +30,7 @@ if(clickevent.target.id === "saveNote"){
     //grab input values
 const dateOfInterview = document.querySelector("#note--date").value
 const author = document.querySelector("#note--author" ).value
-const criminalId = document.querySelector("#note--criminalId" ).value
+const criminalId =parseInt(document.querySelector("#note--criminalId" ).value)
 const note = document.querySelector("#note--text" ).value
 const timestamp = Date.now()
 
@@ -52,6 +46,6 @@ const newNote = {
 //send the object to database
   saveNote(newNote)
 }
-
 })
+
 

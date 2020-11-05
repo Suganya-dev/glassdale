@@ -1,4 +1,4 @@
-export const notecard=(noteObj)=>{
+export const notecard=(noteObj,criminalObj)=>{
     return `
     <section class="notes" >
     <h2>Author: ${noteObj.author}</h2>

@@ -1,5 +1,6 @@
 import {getNotes,useNotes} from "./Notedataprovider.js"
 import {notecard} from "./Note.js"
+import { getCriminals, useCriminals } from "../criminal/criminaldataprovider.js"
 // import {useCriminals} from "./criminal/criminaldataprovider.js"
 //get notes from api
 // use the notes array
@@ -7,52 +8,34 @@ import {notecard} from "./Note.js"
 // render to the dom
 const notescontainer = document.querySelector(".notesContainer")
 const eventHub = document.querySelector(".container")
+
 export const Notelist = () => {
     getNotes()
+    // .then(() => getCriminals())
+    .then(getCriminals)
     .then( () =>{
    const allnotes = useNotes()
-   render (allnotes)
+   const allcriminals = useCriminals()
+   render (allnotes,allcriminals)
     })
 }
 eventHub.addEventListener("noteStateChangedEvent",() => Notelist())
 
 
-const render = (NotesArray) =>{
+const render = (NotesArray,criminalsArray) =>{
 
     let NotesHTML = ""
     //   criminals.forEach()
     for(const notes of NotesArray){
-        NotesHTML += notecard(notes)
-
+        const relatedCriminal = criminalsArray.find (criminal => criminal.id === notes.criminalId)
+        NotesHTML += notecard(notes,relatedCriminal)
+    }
         notescontainer.innerHTML = `
                 ${NotesHTML} `
 }
-}
 
-const render1 = (noteCollection, criminalCollection) => {
-    contentTarget.innerHTML = noteCollection.map(note => {
-        // Find the related criminal
-        const relatedCriminal = criminalCollection.find(criminal => criminal.id === note.criminalId)
 
-        return `
-            <section class="note">
-                <h2>Note about ${relatedCriminal.name}</h2>
-                ${note.noteText}
-            </section>
-        `
-    })
-}
 
-const NoteList = () => {
-    getNotes()
-        .then(getCriminals)
-        .then(() => {
-            const notes = useNotes()
-            const criminals = useCriminals()
-
-            render(notes, criminals)
-        })
-}
 
 
 
