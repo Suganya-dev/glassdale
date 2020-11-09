@@ -1,204 +1,68 @@
 {
   "notes": [
     {
-      "id": 1,
-      "dateOfInterview": "10/22/20",
-      "author": "sherlock Homes",
-      "suspect": "Professor Moriarty",
-      "note": "He is very good writer as well and good instructor",
-      "timestamp": "99999898"
+      "dateOfInterview": "2020-11-12",
+      "author": "Suganya",
+      "criminalId": 11,
+      "note": "she is very innocent",
+      "timestamp": 1604943052915,
+      "id": 1
     },
     {
-      "id": 2,
-      "dateOfInterview": "10/22/20",
-      "author": "sherlock Homes",
-      "suspect": "Professor Moriarty",
-      "note": "He is very good writer as well and good instructor",
-      "timestamp": "99999898"
+      "dateOfInterview": "2020-11-12",
+      "author": "Suganya",
+      "criminalId": 11,
+      "note": "she is very innocent",
+      "timestamp": 1604943056916,
+      "id": 2
     },
     {
-      "id": 3,
-      "dateOfInterview": "10/22/20",
-      "author": "sherlock Homes",
-      "suspect": "Professor Moriarty",
-      "note": "He is very good writer as well and good instructor",
-      "timestamp": "99999898"
+      "dateOfInterview": "2020-11-12",
+      "author": "Suganya",
+      "criminalId": 11,
+      "note": "she is very innocent",
+      "timestamp": 1604943071665,
+      "id": 3
     },
     {
-      "dateOfInterview": "2020-10-08",
-      "author": "suganya",
-      "suspect": "Peter",
-      "note": "He is very rude to all.",
-      "timestamp": 1603476979782,
+      "dateOfInterview": "2020-11-11",
+      "author": "Taruniks",
+      "criminalId": 9,
+      "note": "she is very innocent",
+      "timestamp": 1604943194754,
       "id": 4
     },
     {
-      "dateOfInterview": "2020-10-08",
-      "author": "suganya",
-      "suspect": "Peter",
-      "note": "He is very rude to all.",
-      "timestamp": 1603476985285,
+      "dateOfInterview": "2020-11-03",
+      "author": "dfgejfghj",
+      "criminalId": 8,
+      "note": "qwbegjhr",
+      "timestamp": 1604943291481,
       "id": 5
     },
     {
-      "dateOfInterview": "2020-10-20",
-      "author": "Suganya",
-      "suspect": "PeterPaul",
-      "note": "He is very rude and car racer at night.",
-      "timestamp": 1603477948830,
+      "dateOfInterview": "2020-11-03",
+      "author": "dfgejfghj",
+      "criminalId": 8,
+      "note": "qwbegjhr",
+      "timestamp": 1604943304661,
       "id": 6
     },
     {
-      "dateOfInterview": "2020-10-20",
-      "author": "Suganya",
-      "suspect": "PeterPaul",
-      "note": "He is very rude and car racer at night.",
-      "timestamp": 1603478223992,
+      "dateOfInterview": "2020-11-18",
+      "author": "angel",
+      "criminalId": 11,
+      "note": "bfygehfgierhu",
+      "timestamp": 1604943379635,
       "id": 7
     },
     {
-      "dateOfInterview": "2020-10-15",
+      "dateOfInterview": "2020-11-12",
       "author": "Suganya",
-      "suspect": "peter",
-      "note": "He is a fraud.",
-      "timestamp": 1603734785567,
+      "criminalId": 9,
+      "note": "she is  very naughty",
+      "timestamp": 1604944421122,
       "id": 8
-    },
-    {
-      "dateOfInterview": "2020-10-15",
-      "author": "Suganya",
-      "suspect": "peter",
-      "note": "He is a fraud as well innocence.",
-      "timestamp": 1603734797830,
-      "id": 9
-    },
-    {
-      "dateOfInterview": "2020-10-15",
-      "author": "Sara lee",
-      "suspect": "peterpaul",
-      "note": "He is a innocence as well as thief.",
-      "timestamp": 1603734867526,
-      "id": 10
-    },
-    {
-      "dateOfInterview": "2020-11-10",
-      "author": "kjhgkidfkhg",
-      "criminalId": "6",
-      "note": "dvbhegrygfey",
-      "timestamp": 1604598835169,
-      "id": 11
-    },
-    {
-      "dateOfInterview": "2020-11-10",
-      "author": "kjhgkidfkhg",
-      "criminalId": "6",
-      "note": "dvbhegrygfey",
-      "timestamp": 1604598840518,
-      "id": 12
-    },
-    {
-      "dateOfInterview": "2020-11-18",
-      "author": "vvvvv",
-      "criminalId": "8",
-      "note": "tttttttt",
-      "timestamp": 1604599537784,
-      "id": 13
-    },
-    {
-      "dateOfInterview": "2020-11-03",
-      "author": "ffff",
-      "criminalId": "4",
-      "note": "uuuuu",
-      "timestamp": 1604599672819,
-      "id": 14
-    },
-    {
-      "dateOfInterview": "2020-11-03",
-      "author": "ffff",
-      "criminalId": "4",
-      "note": "uuuuu",
-      "timestamp": 1604599686369,
-      "id": 15
-    },
-    {
-      "dateOfInterview": "2020-11-24",
-      "author": "dgdfgdfg",
-      "criminalId": "16",
-      "note": "i love all",
-      "timestamp": 1604602929273,
-      "id": 16
-    },
-    {
-      "dateOfInterview": "2020-11-24",
-      "author": "dgdfgdfg",
-      "criminalId": "16",
-      "note": "i love all",
-      "timestamp": 1604602941184,
-      "id": 17
-    },
-    {
-      "dateOfInterview": "2020-11-24",
-      "author": "dgdfgdfg",
-      "criminalId": "16",
-      "note": "i love all",
-      "timestamp": 1604602942464,
-      "id": 18
-    },
-    {
-      "dateOfInterview": "2020-11-19",
-      "author": "grtyhhh",
-      "criminalId": 82,
-      "note": "hhhhhhhhhh",
-      "timestamp": 1604611901149,
-      "id": 19
-    },
-    {
-      "dateOfInterview": "2020-11-18",
-      "author": "aaaaaa",
-      "criminalId": 14,
-      "note": "mmmmm",
-      "timestamp": 1604612075356,
-      "id": 20
-    },
-    {
-      "dateOfInterview": "2020-11-18",
-      "author": "saranta",
-      "criminalId": 18,
-      "note": "he is very good",
-      "timestamp": 1604612330604,
-      "id": 21
-    },
-    {
-      "dateOfInterview": "2020-11-18",
-      "author": "aaaaa",
-      "criminalId": 12,
-      "note": "aavvvvvvvv",
-      "timestamp": 1604613405108,
-      "id": 22
-    },
-    {
-      "dateOfInterview": "2020-11-10",
-      "author": "qqqqq",
-      "criminalId": 16,
-      "note": "he is very good",
-      "timestamp": 1604614301538,
-      "id": 23
-    },
-    {
-      "dateOfInterview": "2020-11-25",
-      "author": "sugan",
-      "criminalId": 15,
-      "note": "peter",
-      "timestamp": 1604614395218,
-      "id": 24
-    },
-    {
-      "dateOfInterview": "2020-11-25",
-      "author": "sugan",
-      "criminalId": 15,
-      "note": "peter",
-      "timestamp": 1604614431498,
-      "id": 25
     }
   ]
 }

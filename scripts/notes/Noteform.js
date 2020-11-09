@@ -3,13 +3,14 @@ import {getCriminals,useCriminals}from "../criminal/criminaldataprovider.js"
 const contentTarget = document.querySelector(".noteFormContainer")
 const eventHub =  document.querySelector(".container")
 
+// get the criminalsList from getcriminals,usecriminals
 export const NoteForm =() =>{
     getCriminals().then(() =>{
         const criminals = useCriminals()
         render(criminals) 
     })
 }
-
+// rendering and put into DOM
 const render =(criminals) =>{
     contentTarget.innerHTML = `
     <input id="note--date" type="date"/>
@@ -25,6 +26,7 @@ const render =(criminals) =>{
         <button id="saveNote">Save Note</button>`
 }
 
+// creating a web browseer event
 eventHub.addEventListener ("click", clickevent => {
 if(clickevent.target.id === "saveNote"){
     //grab input values
