@@ -20,6 +20,8 @@ export const criminalcard =(criminalObj,facilities) => {
     </section>
     `
 }
+
+
 eventHub.addEventListener("click",clickEvent =>{
 const[prefix, criminalId] = clickEvent.target.id.split("--")
 // console.log(prefix, criminalId)
