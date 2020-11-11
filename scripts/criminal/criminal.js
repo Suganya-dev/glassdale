@@ -17,6 +17,7 @@ export const criminalcard =(criminalObj,facilities) => {
     </ul>
 </div>
     <button id="associates--${criminalObj.id}">Associate Alibis</button>
+  
     </section>
     `
 }

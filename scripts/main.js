@@ -19,6 +19,8 @@ getFacilities();
 import {getCriminalFacilities,useCriminalFacilities} from "./facility/CriminalFacilityProvider.js"
 getCriminalFacilities();
 useCriminalFacilities();
+import{FacilityButton} from "./facility/FacilityList.js"
+FacilityButton();
 
 CriminalList();
 // criminalcard();
