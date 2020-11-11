@@ -13,6 +13,9 @@ import {createAlibiEventListener} from "./criminal/AlibiList.js"
 import {useWitnessstatements} from "./witnesses/witnessdataprovider.js"
 import {witnessButton} from "./witnesses/witnesstatbutton.js"
 import {witnesssesList} from "./witnesses/witnessList.js"
+import {getFacilities,useFacilities} from "./facility/FacilityProvider.js"
+useFacilities();
+getFacilities();
 
 CriminalList();
 // criminalcard();

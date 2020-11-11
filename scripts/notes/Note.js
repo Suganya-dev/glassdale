@@ -6,6 +6,7 @@ export const notecard=(noteObj,criminalObj)=>{
     <p>Note: ${noteObj.note}</p>
     <p> dateOfInterview: ${noteObj.dateOfInterview} </p>
    <p> timestamp: ${new Date(noteObj.timestamp).toLocaleDateString('en-US')}</p>
+   <button id="deleteNote--${noteObj.id}">Delete</button>
    </section>
     `
 }
