@@ -14,12 +14,7 @@ eventHub.addEventListener("alibibuttonClicked", eventObj =>{
     render(numCriminal)
 })
 }
-//  const AlibiList = (crminalObj) => {
-//     //  console.log(AlibiList)
-//      render(crminalObj)
-//  }
-
- const render = (criminalObj) => {
+const render = (criminalObj) => {
     const contentTarget = document.querySelector(`#criminal-${criminalObj.id}`)
     
     contentTarget.innerHTML += `

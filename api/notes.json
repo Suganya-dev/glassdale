@@ -1,83 +1,43 @@
 {
   "notes": [
     {
-      "id": 1,
-      "dateOfInterview": "10/22/20",
-      "author": "sherlock Homes",
-      "suspect": "Professor Moriarty",
-      "note": "He is very good writer as well and good instructor",
-      "timestamp": "99999898"
-    },
-    {
-      "id": 2,
-      "dateOfInterview": "10/22/20",
-      "author": "sherlock Homes",
-      "suspect": "Professor Moriarty",
-      "note": "He is very good writer as well and good instructor",
-      "timestamp": "99999898"
-    },
-    {
-      "id": 3,
-      "dateOfInterview": "10/22/20",
-      "author": "sherlock Homes",
-      "suspect": "Professor Moriarty",
-      "note": "He is very good writer as well and good instructor",
-      "timestamp": "99999898"
-    },
-    {
-      "dateOfInterview": "2020-10-08",
-      "author": "suganya",
-      "suspect": "Peter",
-      "note": "He is very rude to all.",
-      "timestamp": 1603476979782,
-      "id": 4
-    },
-    {
-      "dateOfInterview": "2020-10-08",
-      "author": "suganya",
-      "suspect": "Peter",
-      "note": "He is very rude to all.",
-      "timestamp": 1603476985285,
-      "id": 5
-    },
-    {
-      "dateOfInterview": "2020-10-20",
+      "dateOfInterview": "2020-11-12",
       "author": "Suganya",
-      "suspect": "PeterPaul",
-      "note": "He is very rude and car racer at night.",
-      "timestamp": 1603477948830,
-      "id": 6
+      "criminalId": 11,
+      "note": "she is very innocent",
+      "timestamp": 1604943052915,
+      "id": 1
     },
     {
-      "dateOfInterview": "2020-10-20",
+      "dateOfInterview": "2020-11-12",
       "author": "Suganya",
-      "suspect": "PeterPaul",
-      "note": "He is very rude and car racer at night.",
-      "timestamp": 1603478223992,
-      "id": 7
+      "criminalId": 11,
+      "note": "she is very innocent",
+      "timestamp": 1604943071665,
+      "id": 3
     },
     {
-      "dateOfInterview": "2020-10-15",
-      "author": "Suganya",
-      "suspect": "peter",
-      "note": "He is a fraud.",
-      "timestamp": 1603734785567,
+      "dateOfInterview": "2020-11-11",
+      "author": "angeline",
+      "criminalId": 7,
+      "note": "dbghur nbfjhrwuig jnefuhweut",
+      "timestamp": 1604978541661,
       "id": 8
     },
     {
-      "dateOfInterview": "2020-10-15",
-      "author": "Suganya",
-      "suspect": "peter",
-      "note": "He is a fraud as well innocence.",
-      "timestamp": 1603734797830,
+      "dateOfInterview": "2020-11-06",
+      "author": "divashini ",
+      "criminalId": 14,
+      "note": "dbghur nbfjhrwuig jnefuhweut",
+      "timestamp": 1604978586285,
       "id": 9
     },
     {
-      "dateOfInterview": "2020-10-15",
-      "author": "Sara lee",
-      "suspect": "peterpaul",
-      "note": "He is a innocence as well as thief.",
-      "timestamp": 1603734867526,
+      "dateOfInterview": "2020-11-09",
+      "author": "suganya",
+      "criminalId": 13,
+      "note": "she is not doing her work",
+      "timestamp": 1605110469929,
       "id": 10
     }
   ]
