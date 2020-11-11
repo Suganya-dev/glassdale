@@ -1,45 +1,53 @@
 import { saveNote } from "./Notedataprovider.js";
-
-
-
+import {getCriminals,useCriminals}from "../criminal/criminaldataprovider.js"
 const contentTarget = document.querySelector(".noteFormContainer")
 const eventHub =  document.querySelector(".container")
-const render = () => {
+
+// get the criminalsList from getcriminals,usecriminals
+export const NoteForm =() =>{
+    getCriminals().then(() =>{
+        const criminals = useCriminals()
+        render(criminals) 
+    })
+}
+// rendering and put into DOM
+const render =(criminals) =>{
     contentTarget.innerHTML = `
-        <input id= "notes--dateOfInterview" type = "date"/>
-        <input id= "notes--author" type="text" placeholder="Your name here" />
-        <input id= "notes--suspect" type="text"  placeholder="Your SuspectName here" />
-        <textarea id ="notes--note"  placeholder="Your Note here"></textarea>
+    <input id="note--date" type="date"/>
+    <input id ="note--author" type="text" placeholder="Your name"/>
+    <select class="criminalSelect" id="note--criminalId">
+    <option value="0">Select a suspect</option>
+     ${criminals.map(criminalObject =>{
+         return `<option value="${ criminalObject.id }">${ criminalObject.name }</option>`
+     }).join("")
+ }
+ </select>
+    <input id="note--text" type="text" placeholder="Note text"/>
+        <button id="saveNote">Save Note</button>`
+}
 
-        <button id="saveNote">SaveNote</button>
-    `
-};
-
+// creating a web browseer event
 eventHub.addEventListener ("click", clickevent => {
 if(clickevent.target.id === "saveNote"){
     //grab input values
-const dateOfInterview = document.querySelector("#notes--dateOfInterview").value
-const author = document.querySelector("#notes--author" ).value
-const suspect = document.querySelector("#notes--suspect" ).value
-const note = document.querySelector("#notes--note" ).value
+const dateOfInterview = document.querySelector("#note--date").value
+const author = document.querySelector("#note--author" ).value
+const criminalId =parseInt(document.querySelector("#note--criminalId" ).value)
+const note = document.querySelector("#note--text" ).value
 const timestamp = Date.now()
 
 //make a note object
-
 const newNote = {
     dateOfInterview,
     author,
-    suspect,
+    criminalId,
     note,
     timestamp
 }
-
-console.log(newNote)
+// console.log(newNote)
 //send the object to database
   saveNote(newNote)
 }
-
 })
-export const NoteForm = () => {
-    render()
-}
+
+
