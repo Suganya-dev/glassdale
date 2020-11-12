@@ -41,12 +41,20 @@
       "id": 10
     },
     {
-      "dateOfInterview": "",
-      "author": "",
-      "suspect": "",
-      "note": "",
-      "timestamp": 1605123907885,
+      "dateOfInterview": "2020-11-03",
+      "author": "ghfyhjyg",
+      "criminalId": 12,
+      "note": "hgduchfu duhfue hnfiue",
+      "timestamp": 1605209863873,
       "id": 11
+    },
+    {
+      "dateOfInterview": "2020-11-03",
+      "author": "ghfyhjyg",
+      "criminalId": 12,
+      "note": "hgduchfu duhfue hnfiue",
+      "timestamp": 1605209865155,
+      "id": 12
     }
   ]
 }

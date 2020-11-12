@@ -1,7 +1,7 @@
-import{useCriminalFacilities} from"./FacilityProvider.js"
-import{useCriminals} from"./criminaldataprovider.js"
+import{useCriminalFacilities} from"../facility/CriminalFacilityProvider.js"
+import{useCriminals} from"../criminal/criminaldataprovider.js"
 
-export const facillityCard = (facilityObj) =>{
+export const facilityCard = (facilityObj) =>{
  return ` <div class="facility">
   <p>${facilityObj.facilityName}</p>
   <p>Security Level: ${facilityObj.securityLevel}</p>

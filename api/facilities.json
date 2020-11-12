@@ -1,0 +1,158 @@
+[
+    {
+      "id": 1,
+      "facilityName": "Menard Correctional Center",
+      "securityLevel": "1 – Maximum",
+      "capacity": 3205
+    },
+    {
+      "id": 2,
+      "facilityName": "Pontiac Correctional Center",
+      "securityLevel": "1 – Maximum",
+      "capacity": 1492
+    },
+    {
+      "id": 3,
+      "facilityName": "Stateville Correctional Center",
+      "securityLevel": "1 – Maximum",
+      "capacity": 1648
+    },
+    {
+      "id": 4,
+      "facilityName": "Northern Reception and Classification (NRC)",
+      "securityLevel": "1 – Maximum",
+      "capacity": 1625
+    },
+    {
+      "id": 5,
+      "facilityName": "Dixon Correctional Center",
+      "securityLevel": "2 – Secure Medium (X-House Psychiatric)",
+      "capacity": 2529
+    },
+    {
+      "id": 6,
+      "facilityName": "Hill Correctional Center",
+      "securityLevel": "2 – Secure Medium",
+      "capacity": 1867
+    },
+    {
+      "id": 7,
+      "facilityName": "Lawrence Correctional Center",
+      "securityLevel": "2 – Secure Medium",
+      "capacity": 2320
+    },
+    {
+      "id": 8,
+      "facilityName": "Pinckneyville Correctional Center",
+      "securityLevel": "2 – Secure Medium",
+      "capacity": 2274
+    },
+    {
+      "id": 9,
+      "facilityName": "Western Illinois Correctional Center",
+      "securityLevel": "2 – Secure Medium",
+      "capacity": 1871
+    },
+    {
+      "id": 10,
+      "facilityName": "Big Muddy River Correctional Center",
+      "securityLevel": "3 – High Medium",
+      "capacity": 1598
+    },
+    {
+      "id": 11,
+      "facilityName": "Danville Correctional Center",
+      "securityLevel": "3 – High Medium",
+      "capacity": 1864
+    },
+    {
+      "id": 12,
+      "facilityName": "Illinois River Correctional Center",
+      "securityLevel": "3 – High Medium",
+      "capacity": 2094
+    },
+    {
+      "id": 13,
+      "facilityName": "Menard Medium Security Unit",
+      "securityLevel": "3 – High Medium",
+      "capacity": 441
+    },
+    {
+      "id": 14,
+      "facilityName": "Pontiac Medium Security Unit",
+      "securityLevel": "3 – High Medium",
+      "capacity": 488
+    },
+    {
+      "id": 15,
+      "facilityName": "Shawnee Correctional Center",
+      "securityLevel": "3 – High Medium",
+      "capacity": 2147
+    },
+    {
+      "id": 16,
+      "facilityName": "Centralia Correctional Center",
+      "securityLevel": "4 – Medium",
+      "capacity": 1528
+    },
+    {
+      "id": 17,
+      "facilityName": "Decatur Correctional Center",
+      "securityLevel": "4 – Medium",
+      "capacity": 790
+    },
+    {
+      "id": 18,
+      "facilityName": "Graham Correctional Center",
+      "securityLevel": "4 – Medium",
+      "capacity": 2012
+    },
+    {
+      "id": 19,
+      "facilityName": "Lincoln Correctional Center",
+      "securityLevel": "4 – Medium",
+      "capacity": 1019
+    },
+    {
+      "id": 20,
+      "facilityName": "Logan Correctional Center",
+      "securityLevel": "4 – Medium",
+      "capacity": 2019
+    },
+    {
+      "id": 21,
+      "facilityName": "Sheridan Correctional Center",
+      "securityLevel": "4 – Medium",
+      "capacity": 2104
+    },
+    {
+      "id": 22,
+      "facilityName": "Jacksonville Correctional Center",
+      "securityLevel": "5 – High Minimum",
+      "capacity": 1012
+    },
+    {
+      "id": 23,
+      "facilityName": "Robinson Correctional Center",
+      "securityLevel": "5 – High Minimum",
+      "capacity": 1223
+    },
+    {
+      "id": 24,
+      "facilityName": "Taylorville Correctional Center",
+      "securityLevel": "5 – High Minimum",
+      "capacity": 1221
+    },
+    {
+      "id": 25,
+      "facilityName": "East Moline Correctional Center",
+      "securityLevel": "6 – Minimum",
+      "capacity": 1228
+    },
+    {
+      "id": 26,
+      "facilityName": "Southwestern Illinois Correctional Center",
+      "securityLevel": "6 – Minimum",
+      "capacity": 621
+    }
+  ]
