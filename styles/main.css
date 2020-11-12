@@ -14,7 +14,8 @@
     font-size: large;
 }
 
-.officersContainer,.caseDataContainer{
+
+.officersContainer,.caseDataContainer,.facilityContainer{
     border: 1px solid grey;
     width: 50%;
     height: 60%;
@@ -34,6 +35,16 @@
     flex-wrap: wrap;
 
 }
+.facilityContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    flex-basis: 20%;
+    font-size: large;
+    padding: 50px;
+   background-color:rgb(231, 177, 77);
+}
+
 .filters__crime{
     margin-left: 30%;
     font-size: larger;

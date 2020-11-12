@@ -4,55 +4,61 @@ import {useConvictions} from "../convictions/ConvictionProvider.js"
 import {getFacilities,useFacilities} from "../facility/FacilityProvider.js"
 import {getCriminalFacilities,useCriminalFacilities} from "../facility/CriminalFacilityProvider.js"
 
-const contentTarget = document.querySelector(".criminalsContainer")
+
+const criminalsContainer = document.querySelector(".criminalsContainer")
 const eventHub = document.querySelector(".container")
  console.log(eventHub)
 
-// export const CriminalList = () => {
-//     getCriminals().then( () => { 
-//         const criminals = useCriminals();
-//          render(criminals);
-    
-// })
-// }
+ let facilities =[]
+ let criminals=[]
+ let crimFac = []
 
 export const CriminalList = () => {
     // Kick off the fetching of both collections of data
-    getFacilities()
+    getCriminals()
+    .then(getFacilities)
         .then(getCriminalFacilities)
-        .then(
-            () => {
+        .then(() => {
                 // Pull in the data now that it has been fetched
-                const facilities = useFacilities()
-                const crimFac = useCriminalFacilities()
-                const criminals = useCriminals()
+                facilities = useFacilities()
+                crimFac = useCriminalFacilities()
+                 criminals = useCriminals()
 
                 // Pass all three collections of data to render()
-                render(criminals, facilities, crimFac)
+                render()
             }
-        )
-}
+        )}
 
-const render = (criminalsToRender, allFacilities, allRelationships) => {
+const render = () => {
     // debugger
-    // Step 1 - Iterate all criminals
-    contentTarget.innerHTML = criminalsToRender.map(
-        (criminalObject) => {
+  // Step 1 - Iterate all criminals
+   // contentTarget.innerHTML = criminals.map(
+    //     (criminalObject) => {
      // Step 2 - Filter all relationships to get only ones for this criminal
-    const facilityRelationshipsForThisCriminal = allRelationships.filter(cf => cf.criminalId === criminalObject.id)
+     let criminalHTMLrepresentation = ""
+     for(const criminal of criminals){
+    const facilityRelationshipsForThisCriminal = crimFac.filter(cf => cf.criminalId === criminal.id)
 
     // Step 3 - Convert the relationships to facilities with map()
-     const facilities = facilityRelationshipsForThisCriminal.map(cf => {
-     const matchingFacilityObject = allFacilities.find(facility => facility.id === cf.facilityId)
+     const facilitiesArray = facilityRelationshipsForThisCriminal.map(cf => {
+     const matchingFacilityObject = facilities.find(facility => facility.id === cf.facilityId)
         return matchingFacilityObject
             })
 
     // Must pass the matching facilities to the Criminal component
-    return criminalcard(criminalObject, facilities)
-        }
-    ).join("")
+    criminalHTMLrepresentation +=criminalcard(criminal,facilitiesArray)
+    }
+    criminalsContainer.innerHTML = `
+        <h3>Glassdale Criminals</h3>
+        <section class="criminalsList">
+          ${criminalHTMLrepresentation}
+        </section>
+      `
 }
 
+
+    
+// eventhandlers
 
 eventHub.addEventListener("crimeSelected", event => {
         // console.log("crimeSelected",event.detail.crimeThatWasChosen)
@@ -101,19 +107,3 @@ const filteredArrayCriminals = criminals.filter(
   })
 
 
-    //   const render = (criminals) => { 
-    //   let criminalHTML = ""
-    // //   criminals.forEach()
-    // for(const numbers of criminals){
-    // criminalHTML += criminalcard(numbers)
-
-    // contentElement.innerHTML =  
-    // `<h3>  Glassdale Criminals   </h3>
-    // <section  class="criminals" > 
-    // ${criminalHTML}
-    // </section>`
-
-    //     }
-    // }
-
-   
